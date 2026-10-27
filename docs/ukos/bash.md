@@ -16,4 +16,4 @@ rm – Usuwanie pliku (np. rm archive.md – z uwagą, że omija kosz).
 
 cat – Wyświetlanie zawartości pliku (np. cat bash.md).
 
-clear – Czyszczenie widoku terminala.
+clear – Czyszczenie widoku terminala. JD
