@@ -1,23 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">.
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <title>WARP – Git i GitHub | Baza Wiedzy</title>
 </head>
 <body>
-    <div class="table-scroll">
-  <table class="command-table">
-    <caption>Podstawowe polecenia Git</caption>
-    <thead>
-      <tr><th>Polecenie</th><th>Znaczenie</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><code>git status</code></td><td>Pokazuje stan repozytorium.</td></tr>
-      <tr><td><code>git log</code></td><td>Wyświetla historię commitów.</td></tr>
-    </tbody>
-  </table>
-</div>
+    <header>
+        <h1>WARP – Warsztat Pracy Programisty</h1>
+        <p>Przewodnik po systemie kontroli wersji Git oraz platformie GitHub.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona Główna</a></li>
+            <li><a href="bash.html">Bash</a></li>
+            <li><a href="dotnet-cli.html">Dotnet_cli</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Wprowadzenie do Gita</h2>
+            <p>Git to rozproszony system kontroli wersji, który pozwala śledzić zmiany w kodzie źródłowym, ułatwiając współpracę nad projektami programistycznymi oraz zarządzanie historią rewizji.</p>
+        </section>
+
+        <section>
+            <h2>Procedura pracy (Workflow)</h2>
+            <ol>
+                <li><strong>Synchronizacja:</strong> Pobranie najnowszych zmian z repozytorium zdalnego.</li>
+                <li><strong>Branch:</strong> Utworzenie i przełączenie na nową gałąź roboczą dla danej funkcji lub poprawki.</li>
+                <li><strong>Zmiana:</strong> Modyfikacja plików w projekcie.</li>
+                <li><strong>Commit:</strong> Zatwierdzenie zmian lokalnie wraz z opisem.</li>
+                <li><strong>Push:</strong> Wysłanie gałęzi do repozytorium zdalnego.</li>
+                <li><strong>PR (Pull Request):</strong> Utworzenie zgłoszenia połączenia kodu w celu code review i scalenia.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Zestawienie poleceń Git</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #e2e8f0; text-align: left;">
+                        <th style="padding: 10px;">Polecenie</th>
+                        <th style="padding: 10px;">Opis działania</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git clone</code></td>
+                        <td style="padding: 10px;">Pobiera istniejące repozytorium zdalne na dysk lokalny.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git status</code></td>
+                        <td style="padding: 10px;">Wyświetla status aktualnego drzewa roboczego i śledzonych plików.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git add</code></td>
+                        <td style="padding: 10px;">Dodaje zmiany do obszaru śledzenia (staging area).</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git commit</code></td>
+                        <td style="padding: 10px;">Tworzy trwały punkt kontrolny (commit) z zatwierdzonymi zmianami.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git push</code></td>
+                        <td style="padding: 10px;">Wysyła lokalne commity do repozytorium zdalnego.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git pull</code></td>
+                        <td style="padding: 10px;">Pobiera zmiany ze zdalnego repozytorium i łączy je z bieżącą gałęzią.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git fetch</code></td>
+                        <td style="padding: 10px;">Pobiera metadane i zmiany ze zdalnego repozytorium bez ich scalania.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git branch</code></td>
+                        <td style="padding: 10px;">Tworzy, wyświetla lub usuwa gałęzie (branch).</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                        <td style="padding: 10px;"><code>git switch</code></td>
+                        <td style="padding: 10px;">Bezpiecznie przełącza pomiędzy gałęziami projektu.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;"><code>git log</code></td>
+                        <td style="padding: 10px;">Wyświetla historię commitów dla bieżącej gałęzi.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Dokumentacja i zasoby</h2>
+            <ul>
+                <li><a href="../docs/warp/git.md">Lokalna dokumentacja projektu (Markdown)</a></li>
+                <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja Git</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projekt ma charakter edukacyjny.</p>
+    </footer>
 </body>
 </html>
