@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">.
-    <title>Document</title>
+    <title>Podstawy pracy w terminalu Bash</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="nav-container">
+            <a href="../index.html">Strona główna</a>
+            <a href="dotnet-cli.html">dotnet Cli</a>
+            <a href="git.html">Git</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Podstawy pracy w terminalu Bash</h1>
+        
+        <section>
+            <p>Terminal (powłoka Bash) to potężne narzędzie tekstowe, które pozwala na pełną kontrolę nad systemem operacyjnym. Poniższy przewodnik zbiera najważniejsze polecenia oraz zasady, które pomogą Ci pracować wydajnie i bezpiecznie.</p>
+        </section>
+
+        <section>
+            <h2>Zasady bezpiecznej pracy w terminalu</h2>
+            <ul>
+                <li><strong>Sprawdzaj swoją lokalizację:</strong> Zawsze upewnij się za pomocą polecenia <code>pwd</code>, w jakim katalogu się znajdujesz, zanim wykonasz operacje modyfikujące.</li>
+                <li><strong>Ostrożnie z usuwaniem:</strong> Polecenie <code>rm</code> usuwa pliki trwale – nie trafiają one do Kosza.</li>
+                <li><strong>Korzystaj z autouzupełniania:</strong> Naciskaj klawisz <code>Tab</code>, aby unikać błędów w nazwach plików i katalogów.</li>
+                <li><strong>Ograniczaj uprawnienia administratora:</strong> Używaj uprawnień roota (np. <code>sudo</code>) tylko wtedy, gdy jest to absolutnie konieczne.</li>
+            </ul>
+        </section>
+
+        <section >
+            <table>
+                <caption>Zestawienie podstawowych poleceń systemu Bash</caption>
+                <thead>
+                    <tr>
+                        <th>Polecenie</th>
+                        <th>Przykład</th>
+                        <th>Opis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>pwd</code></td>
+                        <td><code>pwd</code></td>
+                        <td>Wyświetla ścieżkę bezwzględną do aktualnego katalogu roboczego.</td>
+                    </tr>
+                    <tr>
+                        <td><code>ls</code></td>
+                        <td><code>ls -la</code></td>
+                        <td>Wyświetla zawartość katalogu (w tym ukryte pliki).</td>
+                    </tr>
+                    <tr>
+                        <td><code>cd</code></td>
+                        <td><code>cd /home/user/dokumenty</code></td>
+                        <td>Zmienia aktualny katalog roboczy na wskazany.</td>
+                    </tr>
+                    <tr>
+                        <td><code>mkdir</code></td>
+                        <td><code>mkdir projekt</code></td>
+                        <td>Tworzy nowy katalog o podanej nazwie.</td>
+                    </tr>
+                    <tr>
+                        <td><code>touch</code></td>
+                        <td><code>touch index.html</code></td>
+                        <td>Tworzy nowy, pusty plik lub aktualizuje czas jego modyfikacji.</td>
+                    </tr>
+                    <tr>
+                        <td><code>cp</code></td>
+                        <td><code>cp plik.txt kopia.txt</code></td>
+                        <td>Kopiuje pliki lub całe katalogi.</td>
+                    </tr>
+                    <tr>
+                        <td><code>mv</code></td>
+                        <td><code>mv stary.txt nowy.txt</code></td>
+                        <td>Przenosi pliki lub zmienia ich nazwę.</td>
+                    </tr>
+                    <tr>
+                        <td><code>rm</code></td>
+                        <td><code>rm niepotrzebny.txt</code></td>
+                        <td>Usuwa wskazane pliki lub katalogi.</td>
+                    </tr>
+                    <tr>
+                        <td><code>cat</code></td>
+                        <td><code>cat config.txt</code></td>
+                        <td>Wyświetla zawartość pliku tekstowego bezpośrednio w terminalu.</td>
+                    </tr>
+                    <tr>
+                        <td><code>clear</code></td>
+                        <td><code>clear</code></td>
+                        <td>Czyści okno terminala z dotychczasowych wpisów.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Dodatkowe materiały</h2>
+            <ul>
+                <li><a href="../docs/ukos/bash.md">Oryginalny plik Markdown</a></li>
+                <li><a href="https://www.gnu.org/software/bash/manual/bash.html" target="_blank" rel="noopener noreferrer">Oficjalny GNU Bash Manual</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Poradnik Terminala. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
