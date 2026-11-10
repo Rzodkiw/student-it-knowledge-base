@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">.
-    <title>Document</title>
+    <title>Instrukcja .NET CLI</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="../index.html">Strona główna</a>
+            <a href="git.html">Git</a>
+            <a href="bash.html">Bash</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Instrukcja obsługi .NET CLI</h1>
+        
+        <section>
+            <p>.NET CLI (Command Line Interface) to wieloplatformowe narzędzie służące do tworzenia, budowania, uruchamiania i publikowania aplikacji .NET. Poniższy przewodnik przedstawia najważniejsze polecenia oraz sekwencję niezbędną do uruchomienia pierwszego programu.</p>
+        </section>
+
+        <section class="sequence-section">
+            <h2>Kompletna sekwencja: Utworzenie i uruchomienie aplikacji konsolowej</h2>
+            <p>Poniższy blok przedstawia kroki, jakie należy wykonać w terminalu, aby utworzyć i uruchomić nową aplikację:</p>
+            <pre class="code-block"><code>
+</code></pre>
+        </section>
+
+        <section>
+            <table>
+                <caption>Zestawienie podstawowych poleceń .NET CLI</caption>
+                <thead>
+                    <tr>
+                        <th>Polecenie</th>
+                        <th>Przykład użycia</th>
+                        <th>Opis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>dotnet --version</code></td>
+                        <td><code>dotnet --version</code></td>
+                        <td>Wyświetla wersję zainstalowanego zestawu SDK .NET.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet --list-sdks</code></td>
+                        <td><code>dotnet --list-sdks</code></td>
+                        <td>Wyświetla listę wszystkich zainstalowanych na komputerze wersji SDK .NET.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet new list</code></td>
+                        <td><code>dotnet new list</code></td>
+                        <td>Wyświetla listę dostępnych szablonów projektów, które można utworzyć.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet new console</code></td>
+                        <td><code>dotnet new console -n Program</code></td>
+                        <td>Tworzy nowy projekt aplikacji konsolowej o zadanej nazwie.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet restore</code></td>
+                        <td><code>dotnet restore</code></td>
+                        <td>Przywraca zależności oraz pakiety zdefiniowane w projekcie.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet build</code></td>
+                        <td><code>dotnet build</code></td>
+                        <td>Kompiluje projekt oraz pliki źródłowe do postaci pliku wykonywalnego.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet run</code></td>
+                        <td><code>dotnet run</code></td>
+                        <td>Kompiluje i uruchamia aplikację w jednym kroku.</td>
+                    </tr>
+                    <tr>
+                        <td><code>dotnet clean</code></td>
+                        <td><code>dotnet clean</code></td>
+                        <td>Czyści katalog wyjściowy z plików powstałych podczas budowania.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Dodatkowe materiały</h2>
+            <ul>
+                <li><a href="../docs/prg1/dotnet-cli.md">Oryginalny plik Markdown</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/dotnet/core/tools/" target="_blank" rel="noopener noreferrer">Oficjalna dokumentacja .NET CLI</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
 </body>
 </html>
